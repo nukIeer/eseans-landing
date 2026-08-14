@@ -10,7 +10,7 @@
   // Fetch basarisiz/yavas olursa 600ms sonra Turkce metin gorunur (fallback).
   window.__ESLANG=null;
   document.documentElement.style.visibility='hidden';
-  setTimeout(function(){document.documentElement.style.visibility='visible';},600);
+  setTimeout(function(){document.documentElement.style.visibility='visible';},3000);
   // Partner ref kodu: ?ref=CODE → localStorage'a kaydet (attribution icin)
   (function(){var p=new URLSearchParams(window.location.search);var r=p.get('ref');if(r){try{localStorage.setItem('eseans_ref',r.trim().toUpperCase())}catch(e){}}})();
   // IP -> dil tespiti
