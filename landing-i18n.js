@@ -815,7 +815,7 @@ window.ESEANS_I18N = {
   var inj = window.__ESLANG;
   if (inj === '__ESEANS_LANG__') inj = null; // dev: worker enjekte etmedi
   var nav = (navigator.language || '').slice(0, 2).toLowerCase();
-  var cand = [qlang, ls, inj, nav, 'es'];
+  var cand = [qlang, inj, ls, nav, 'es'];
   var lang = 'es';
   for (var i = 0; i < cand.length; i++) { if (has(cand[i])) { lang = cand[i]; break; } }
   var dict = D[lang] || D.es || {};
